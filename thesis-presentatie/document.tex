@@ -1,0 +1,146 @@
+%\documentclass[dvipsnames,14pt, table]{beamer}
+\documentclass[dvipsnames,handout]{beamer}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage{epstopdf} 
+\usepackage{ifthen}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{color, colortbl}
+
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightBlue}{rgb}{0.5,1,0.9}
+\definecolor{LightYellow}{rgb}{0.95,1,0}
+
+\title{Comparative study of multi-agent systems for solving the dynamic
+ready-mix concrete problem}
+\author{Kristof Peeters}
+\date{}
+\institute{KU Leuven}
+
+\usetheme{Frankfurt}
+\usecolortheme[named=NavyBlue]{structure}
+\setbeamertemplate{navigation symbols}{}
+
+%\useinnertheme{circles}
+
+\setbeamercovered{dynamic}
+%Notes aan of uit zetten.
+%\setbeameroption{show notes}
+\setbeameroption{hide notes}
+
+\AtBeginSection[]
+{
+   \begin{frame}
+       \frametitle{Comparative study of multi-agent systems for solving \\ the
+       dynamic ready-mix concrete problem}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+
+\begin{document}
+
+%Title page
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+
+%Table of contents
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+%%%%%% -- Context -- %%%%%
+\section{Context}
+
+\begin{frame}{Problem description}
+what constitutes the RMC problem ? 
+\noindent
+\begin{minipage}{\textwidth}
+  \centering
+  \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figs/problem-description.eps}} 
+  \hspace*{.05in}
+  \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figs/challenges.eps}}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Challenges}
+\begin{center}
+\includegraphics[scale=0.5]{figs/rubiks-cube.eps}
+\end{center}
+\vspace{-2.0em}
+\begin{itemize}
+  \item RMC problem as \ldots \\
+  \hspace{0.25in} $\rightarrow$ Scheduling problem \\
+  \hspace{0.25in} $\rightarrow$ Optimization problem
+	\item Timing constraints
+	\item Dynamic events
+	\item \textbf{Decentralized} $\rightarrow$ Multi-agent system
+\end{itemize}
+
+\end{frame}
+
+%%%%%% -- Vraagstelling -- %%%%%
+\section{Research questions}
+
+\begin{frame}{Research questions}
+\begin{itemize}
+  \item Can delegate MASs using selfish agents, provide acceptable solutions to
+  the dynamic RMC problem ?
+  \item To what extent can cooperative agents improve the results of the
+  selfish agents from the delegate MAS approach ?
+\end{itemize}
+\end{frame}
+
+%%%%%% -- Aanpak -- %%%%%
+\section{Approaches}
+
+\begin{frame}{Delegate MAS}
+\textbf{Sentence 1.} \\ 
+\vspace{\baselineskip}
+sentence 2 with vertical space
+\end{frame}
+
+\begin{frame}{Joint intentions}
+\textbf{Sentence 1.} \\ 
+\vspace{\baselineskip}
+sentence 2 with vertical space
+\end{frame}
+
+%%%%%% -- Resultaten -- %%%%%
+\section{Results}
+
+
+%%%%%% -- Besluit -- %%%%%
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+
+\end{frame}
+
+\begin{frame}{Future work?}
+
+\end{frame}
+
+%%%%%% -- Besluit -- %%%%%
+\section{Demo}
+
+\begin{frame}
+\begin{center} 
+\Huge Demo
+\end{center} 
+\end{frame}
+
+\begin{frame}
+\begin{center} 
+\Huge Questions? 
+\end{center} 
+\end{frame}
+
+
+\end{document}
